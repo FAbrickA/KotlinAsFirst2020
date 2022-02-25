@@ -1,6 +1,6 @@
-1) Делаю фетч проекта KotlinAsFirst2020
+### 1. Делаю фетч проекта KotlinAsFirst2020
 
-2) Клонирую себе на компьютер
+### 2. Клонирую себе на компьютер
 
 	$ git clone https://github.com/FAbrickA/KotlinAsFirst2020
 	Cloning into 'KotlinAsFirst2020'...
@@ -9,7 +9,7 @@
 	Receiving objects: 100% (4851/4851), 962.22 KiB | 155.00 KiB/s, done.
 	Resolving deltas: 100% (2334/2334), done.
 
-3) Добавляю upstream-my
+### 3. Добавляю upstream-my
 
 	$ git remote add upstream-my https://github.com/FAbrickA/KotlinAsFirst2021
 	$ git fetch upstream-my
@@ -22,10 +22,10 @@
 	* [new branch]      master     -> upstream-my/master
 
 
-4) Далее нахожу хеш последнего коммита до моих решений
+### 4. Далее нахожу хеш последнего коммита до моих решений
 Вот он: 1137b420cc95fa6894edad69b31e2da1bb985d1d
 
-5) Делаю rebase upstream-my в ветку master
+### 5. Делаю rebase upstream-my в ветку master
 
 	$ git rebase --onto master 1137b420cc95fa6894edad69b31e2da1bb985d1d upstream-my/master
 	Auto-merging src/lesson11/task1/Complex.kt
@@ -46,7 +46,7 @@
 	 1 file changed, 37 insertions(+), 8 deletions(-)
 	Successfully rebased and updated detached HEAD.
 
-6) Создаю ветку backport и загружаю в неё необходимые коммиты
+### 6. Создаю ветку backport и загружаю в неё необходимые коммиты
 
 	$ git branch backport
 	$ git checkout master
@@ -79,26 +79,26 @@
 	 test/lesson11/task1/UnsignedBigIntegerTest.kt |   8 +-
 	 21 files changed, 2169 insertions(+), 192 deletions(-)
 
-7) Добавляю upstream-theirs и делаю её merge с веткой master
+### 7. Добавляю upstream-theirs и делаю её merge с веткой master
 
 	$ git remote add upstream-theirs https://github.com/hvorostovsa/KotlinAsFirst2021
 	$ git fetch
 	$ git merge -s ours upstream-theirs/master
 	Merge made by the 'ours' strategy.
 
-8) Создаю файл remotes и добавляю в гит
+### 8. Создаю файл remotes и добавляю в гит
 
 	$ git remote -v > remotes
 	$ git add remotes
 	$ git commit -m "Add remotes file"
 
-9) Создаю файл howto.md и добавляю в гит
+### 9. Создаю файл howto.md и добавляю в гит
 
 	$ touch howto.md
 	$ git add howto.md
 	$ git commit -m "Add howto.md"
 
-10) Загружаю всё на гитхаб
+### 10. Загружаю всё на гитхаб
 
 	$ git push
 	$ git checkout backport
