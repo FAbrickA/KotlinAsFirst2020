@@ -82,7 +82,7 @@
 ### 7. Добавляю upstream-theirs и делаю её merge с веткой master
 
 	$ git remote add upstream-theirs https://github.com/hvorostovsa/KotlinAsFirst2021
-	$ git fetch
+	$ git fetch upstream-theirs
 	$ git merge -s ours upstream-theirs/master
 	Merge made by the 'ours' strategy.
 
