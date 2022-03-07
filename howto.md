@@ -8,6 +8,7 @@
 	remote: Total 4851 (delta 0), reused 0 (delta 0), pack-reused 4851
 	Receiving objects: 100% (4851/4851), 962.22 KiB | 155.00 KiB/s, done.
 	Resolving deltas: 100% (2334/2334), done.
+	$ cd KotlinAsFirst2020
 
 ### 3. Добавляю upstream-my
 
